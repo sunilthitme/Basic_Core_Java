@@ -3,17 +3,16 @@ import java.util.Scanner;
 public class BasicProg {
 
 	public static void main(String[] args) {
-		System.out.println("Enter a first number");
 		Scanner sc=new Scanner(System.in);
-		int num1=sc.nextInt();
-		System.out.println("Enter second number");
+		System.out.println("Enter first number ::");
+		 int num1=sc.nextInt();
+		System.out.println("Enter second number ::");
 		int num2=sc.nextInt();
-		
-		int Quotient=num1/num2;
-		int rem=num1%num2;
-		System.out.println("Quotient is:: "+Quotient);
-		System.out.println("Remainder is:: "+rem);
-
+		int temp=num1;
+		num1=num2;
+		num2=temp;
+		System.out.println(" value of number 1 is ::" +num1);
+		System.out.println(" value of number 2 is ::" +num2);
 	}
 
 }
