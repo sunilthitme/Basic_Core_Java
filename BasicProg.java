@@ -1,19 +1,27 @@
 package com.basicprogrammes;
 import java.util.Scanner;
+
+import com.vovel.VovelConsonent;
 public class BasicProg {
 
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter first number ::");
-		 int num1=sc.nextInt();
-		System.out.println("Enter second number ::");
-		int num2=sc.nextInt();
-		int temp=num1;
-		num1=num2;
-		num2=temp;
-		System.out.println(" value of number 1 is ::" +num1);
-		System.out.println(" value of number 2 is ::" +num2);
+		System.out.print("Enter any character ::");
+		 char ch=sc.next().charAt(0);
+      char []vovel= {'a','e','i','o','u','A','E','I','O','U'};
+      
+      VovelConsonent check=new VovelConsonent();
+      
+      for(int i=0;i<vovel.length; i++) {
+    	  int compare = Character.compare(vovel[i], ch);
+    	  if(compare==0) {
+    		  System.out.println(ch+" character is vovel");
+    		  System.exit(0);
+    	  }
+      }
+    		  System.out.println(ch+" character is Consonent");
+    	  }
 	}
+      
 
-}
 
