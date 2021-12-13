@@ -2,21 +2,18 @@ package com.basicprogrammes;
 import java.util.Scanner;
 public class BasicProg {
 
-		public static void main(String[] args) {
-			System.out.print("Enter number is (less than 31) ::");
-			Scanner sc=new Scanner(System.in);
-			int n=sc.nextInt();
-			if(n<=31) {
-			for( int i=1;i<=n;i++ )
-			{    
-				int table =2*i;
-			    System.out.println(table);
-			}
-			}
-			else {
-				System.out.println("Invalid number!!");
-			}
-
-		}
-
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter first number ::");
+		 int num1=sc.nextInt();
+		System.out.println("Enter second number ::");
+		int num2=sc.nextInt();
+		int temp=num1;
+		num1=num2;
+		num2=temp;
+		System.out.println(" value of number 1 is ::" +num1);
+		System.out.println(" value of number 2 is ::" +num2);
 	}
+
+}
+
