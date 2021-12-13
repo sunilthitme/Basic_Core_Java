@@ -3,24 +3,18 @@ import java.util.Scanner;
 public class BasicProg {
 
 	public static void main(String[] args) {
-		System.out.println("Welcome to a  factorization programme!!");
+		System.out.println("Enter a first number");
 		Scanner sc=new Scanner(System.in);
-		 System.out.print("Enter a number:: ");
-		 int num=sc.nextInt();
-		boolean check=false;
-		 for(int i=2; i<=num/2; i++) {
-			 int rem=num%i;
-			
-			 if(rem==0) {
-				 System.out.println("The  Factor of "+ num+ " is "+i);
-               check=true;					 
-			 }
-		 }
+		int num1=sc.nextInt();
+		System.out.println("Enter second number");
+		int num2=sc.nextInt();
 		
-           if(check==false) {
-        	  
-        	   System.out.println("The  Factor of "+ num+ " is "+num+" and "+1);
-           }
-        }
+		int Quotient=num1/num2;
+		int rem=num1%num2;
+		System.out.println("Quotient is:: "+Quotient);
+		System.out.println("Remainder is:: "+rem);
+
 	}
+
+}
 
